@@ -42,17 +42,17 @@ export const stories = [
         { src: juice, w: 30, right: 12, bottom: -6, rotate: 8 },
         { src: smoothie, w: 46, left: 8, bottom: -8, rotate: -6 },
       ],
-      title: 'Sizning menyu',
+      title: 'Raqamli menyu',
       color: '#1f1f1f',
-      label: 'QR orqali',
+      label: 'QR · NFC',
       labelBg: '#e4f46c',
       labelPos: 'under',
     },
     slides: [
       {
         photo: slideSmoothie,
-        heading: 'QR menyu — 5 daqiqada',
-        text: "Taomlaringizni yuklang, QR kodni stolga qo'ying. Mijoz telefoni bilan skanerlaydi va menyuni darhol ko'radi — ilovasiz.",
+        heading: 'Raqamli menyu — QR va NFC',
+        text: "Rasm, tavsif va narxlar bilan taomlar katalogi. Kategoriyalar, qidiruv va bir nechta til — narxni bir bosishda o'zgartiring.",
       },
     ],
   },
@@ -60,18 +60,18 @@ export const stories = [
     id: 'food',
     cover: {
       photo: coverPizza,
-      title: 'Magic\nfood',
+      title: 'Magic\nsite',
       font: 'display',
       color: '#fff',
-      badge: '−30%',
+      badge: 'Website',
       badgeBg: '#ff4f8b',
-      caption: 'Aksiya 31.12 gacha · shartlari saytda',
+      caption: 'magicmenu.uz/sizning-restoran',
     },
     slides: [
       {
         photo: slidePizza,
-        heading: 'Birinchi 3 oyga −30%',
-        text: "Hozir ulaning — Biznes tarifi 3 oy davomida 30% arzon. Karta kerak emas.",
+        heading: 'Restoraningiz uchun tayyor sayt',
+        text: "Shablonni tanlang, logotip va brend ranglaringizni qo'ying. Bosh sahifa, menyu, manzil, aloqa va aksiyalar — bir necha daqiqada.",
       },
     ],
   },
@@ -80,14 +80,14 @@ export const stories = [
     cover: {
       bg: 'radial-gradient(120% 90% at 70% 10%, #2e4fa3 0%, #182b66 45%, #0d1a40 100%)',
       images: [{ src: juice, w: 52, right: 8, bottom: 22, rotate: 10 }],
-      number: '30%',
-      sub: 'ichimliklarga',
+      number: 'NFC',
+      sub: 'stend va kartalar',
     },
     slides: [
       {
         photo: slideJuice,
-        heading: 'Kombo va aksiyalar',
-        text: "«Ichimliklarga 30%» kabi aksiyalarni bir bosishda yarating — menyuda avtomatik ko'rinadi.",
+        heading: 'QR va NFC stendlar',
+        text: "Har bir stol uchun QR kod va NFC kartochka. Mijoz telefonini yaqinlashtiradi — menyu darhol ochiladi.",
       },
     ],
   },
@@ -95,15 +95,15 @@ export const stories = [
     id: 'new',
     cover: {
       photo: coverCoffee,
-      label: 'Yangi taomlar',
+      label: 'Buyurtma',
       labelBg: '#f7ef55',
       labelPos: 'middle',
     },
     slides: [
       {
         photo: slideCoffee,
-        heading: "Yangi taomni 1 daqiqada qo'shing",
-        text: "Rasm, narx va tarkib — menyu barcha stollarda bir zumda yangilanadi.",
+        heading: "Onlayn buyurtma va to'lov",
+        text: "Stol raqami orqali, zalda, olib ketish yoki yetkazib berish. Onlayn to'lov va buyurtma holatini kuzatish.",
       },
     ],
   },
@@ -111,15 +111,15 @@ export const stories = [
     id: 'order',
     cover: {
       photo: coverRamen,
-      title: 'Onlayn\nbuyurtma',
+      title: 'Oshxona\nekrani',
       color: '#fff',
       shade: true,
     },
     slides: [
       {
         photo: slideRamen,
-        heading: 'Onlayn buyurtma',
-        text: "Mijoz stol yonidan yoki uydan buyurtma beradi, oshxona esa uni darhol ekranda ko'radi.",
+        heading: 'Oshxona boshqaruvi',
+        text: "Yangi, tayyorlanayotgan va tayyor buyurtmalar vaqt bo'yicha. Taom tayyor bo'lsa — ofitsiantga bildirishnoma.",
       },
     ],
   },
@@ -141,15 +141,15 @@ export const stories = [
 ]
 
 export const tiles = [
-  { id: 'promo', title: 'Aksiyalar', href: '#features', icon: 'ticket', bg: '#fff5d4' },
-  { id: 'plans', title: 'Tariflar', href: '#plans', icon: 'bag', bg: '#f2f2f3' },
-  { id: 'try', title: "Sinab ko'ring", href: '#start', icon: 'check', bg: '#f2f2f3' },
+  { id: 'plans', title: 'Tariflar', href: '#plans', icon: 'ticket', bg: '#fff5d4' },
+  { id: 'features', title: 'Imkoniyatlar', href: '#features', icon: 'bag', bg: '#f2f2f3' },
+  { id: 'try', title: "Demo ko'rish", href: '#start', icon: 'check', bg: '#f2f2f3' },
 ]
 
 export const reward = {
-  amount: '−30%',
-  title: 'birinchi 3 oyga',
-  sub: 'kafe va restoranlar uchun 31.12 gacha',
+  amount: '99 000',
+  title: "so'mdan / oyiga",
+  sub: 'Starter tarifi · restoran, kafe va oshxonalar uchun',
   href: '#start',
 }
 

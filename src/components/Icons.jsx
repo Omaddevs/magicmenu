@@ -41,17 +41,40 @@ export const PercentBadge = () => (
   </svg>
 )
 
-export const Logo = () => (
-  <svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true">
+/*
+ * MagicMenu logotipi: qizil nuqta + ko'k "m", ichida vilka va qoshiq (manfiy bo'shliq).
+ * Koordinatalar asl 1024px logotipdan olingan.
+ */
+export const LOGO_BLUE = '#03a9f4'
+export const LOGO_RED = '#ff1e1e'
+
+export const LogoMark = ({ title = 'MagicMenu', ...p }) => (
+  <svg viewBox="338 418 348 186" role="img" aria-label={title} {...p}>
     <defs>
-      <linearGradient id="logo-g" x1="0" y1="0" x2="0.8" y2="1">
-        <stop offset="0" stopColor="#5fd8f8" />
-        <stop offset="0.55" stopColor="#2bb4f2" />
-        <stop offset="1" stopColor="#1e96ea" />
-      </linearGradient>
+      <mask id="mm-logo-cut" maskUnits="userSpaceOnUse" x="338" y="418" width="348" height="186">
+        <rect x="338" y="418" width="348" height="186" fill="#fff" />
+        {/* vilka */}
+        <g fill="#000">
+          <rect x="474" y="468" width="7" height="72" rx="3.5" />
+          <rect x="489" y="468" width="7" height="72" rx="3.5" />
+          <rect x="504" y="468" width="7" height="72" rx="3.5" />
+          <rect x="519" y="468" width="7" height="72" rx="3.5" />
+          <path d="M474 526H526V534C526 551 513 556 513 564V604H491V564C491 556 474 551 474 534Z" />
+        </g>
+        {/* qoshiq */}
+        <g fill="#000">
+          <ellipse cx="610" cy="512" rx="27" ry="44" />
+          <rect x="599" y="536" width="22" height="68" />
+        </g>
+      </mask>
     </defs>
-    <rect width="64" height="64" rx="15" fill="url(#logo-g)" />
-    <path d="M32 11c2.2 10.5 6.5 14.8 17 17-10.5 2.2-14.8 6.5-17 17-2.2-10.5-6.5-14.8-17-17 10.5-2.2 14.8-6.5 17-17z" fill="#fff" />
-    <circle cx="48" cy="47" r="3.2" fill="#fff" opacity=".85" />
+    <circle cx="369" cy="574" r="27" fill={LOGO_RED} />
+    <path
+      mask="url(#mm-logo-cut)"
+      fill={LOGO_BLUE}
+      d="M418 600V427h28c8 0 13 4 16 10 14-9 34-14 58-14h88c51 0 74 28 74 66v111z"
+    />
   </svg>
 )
+
+export const Logo = LogoMark
